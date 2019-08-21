@@ -1,0 +1,35 @@
+table, li {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+li {
+  list-style-type: circle;
+}
+li.a{
+  background-color: tomato;
+}
+li.b{
+  background-color:Orange;
+}
+li.c{
+  background-color:DodgerBlue;
+}
+li.d{
+  background-color:MediumSeaGreen;
+}
+li.e{
+  background-color:Gray;
+}
+li.f{
+  background-color:SlateBlue;
+}
+li.g{
+  background-color:Violet;
+}
+li.h{
+  background-color:LightGray;
+}
+li.i{
+  background-color:Yellow;
+}

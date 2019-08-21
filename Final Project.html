@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="Final Project.css">
+</head>
+
+<body>
+  <header>
+    Please click the "White" Color below ~
+  </header>
+  <ul id="list">
+    <li class="a">Tomato</li>
+    <li class="b">Orange</li>
+    <li class="c">DodgerBlue</li>
+    <li class="d">MediumSeaGreen</li>
+    <li class="e">Gray</li>
+    <li class="f">SlateBlue</li>
+    <li class="g">Violet</li>
+    <li class="h">LightGray</li>
+    <li class="i">Yellow</li>
+  </ul>
+</body>
+<script type="text/javascript">
+  var list = document.getElementById('list');
+
+  var clickMe = document.createElement("li");
+  clickMe.textContent = "White";
+
+  list.append(clickMe);
+
+  clickMe.addEventListener('mouseover', () => {
+    // console.log("dapat");
+    var array = list.getElementsByTagName("li");
+    var n = array.length;
+    // console.log(x);
+    var pindahPindah = Math.floor(Math.random() * (n + 1)); //bilangan bulat dikalukan dengan jumlah array(list)
+    // console.log(pindahPindah);
+    setTimeout(
+      list.insertBefore(clickMe, array[pindahPindah]), 250);
+  });
+
+  clickMe.addEventListener('click', () => {
+    document.body.textContent = "Congratulation!";
+  });
+</script>
+
+</html>
